@@ -1,0 +1,174 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+}
+
+.logo {
+    background-color: white;
+}
+
+.logo > img {
+    align: center;
+    height: 2.5rem;
+    padding-left: 20%;
+}
+
+.location{
+    display: block;
+    background-color: #d3d3d3ef;
+    text-align: center;
+    padding: 1rem;
+}
+
+.location > i {
+    display: inline;
+}
+
+.location > p {
+    background-color: #f2f2f24b;
+    border: none;
+    width: 20%;
+    display: inline;
+    margin-left: 10px
+}
+
+.intro {
+    background-color: #F2F2F2;
+    text-align: center;
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+
+.intro > h3 {
+    color: grey;
+    margin: 2rem 1rem;
+}
+
+.intro > p{
+    color: white;
+    background: linear-gradient(to right, #FF79DA 0%, #9356DC 100%);
+    text-align: center;
+    padding: 10px;
+    border-radius: 16px;
+    box-shadow: 5px 10px 20px #888888;
+    height: auto;
+    width: 20%;
+    display: inline;
+
+}
+
+.how {
+    list-style-type: none;
+}
+
+.how > li {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    text-align: center;
+    padding: 10px;
+    border-radius: 18px;
+    box-shadow: 5px 6px 10px #888888;
+    height: auto;
+    width: 90%;
+    margin-bottom: 2rem;
+    background-color: #fff;
+    font-weight: bold;
+}
+
+.how > li > i {
+    line-height: 3.5;
+    color: darkgrey;
+}
+
+#middle {
+    display: inline;
+    line-height: 3.5;
+}
+
+#middle > i {
+    color: darkgrey;
+}
+
+.enjoy {
+    background-color: #9256dc;
+}
+
+.enjoy > i {
+    color: #9256dc;
+}
+
+.Restaurants{
+    background-color: #eee;
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+.Restaurants > figure {
+    background-color: white;
+    box-shadow: 0 0 3px #ccc;
+    border: solid 2px #eee;
+    border-radius: 12px;
+    margin: 1rem;
+    width: 22rem;
+    height: 18rem;
+    padding: 5px;
+  }
+  .Restaurants > figure > img{
+    width: 100%;
+    height: 65%;
+    border-radius: 12px 12px 0px 0px; 
+    object-fit: cover;
+  }
+  
+.Restaurants > figure:hover {
+	border: solid 2px black;
+}
+
+.Restaurants > figcaption {
+    padding-left: 5px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.Restaurants > h3{
+    font-size: 16px;
+    padding-left: 5px;
+    font-weight:bold;
+}
+
+footer {
+    background-color: #000000d7;
+    height: 20rem;
+}
+
+fig {
+    background-image: url("Images/ohmyfood.png");
+}
+
+footer > figure > img {
+    color: white;
+    background-color: white;
+    filter: white;
+    height: 1.5rem;
+}
+
+footer > ul  {
+    list-style-type: none;
+}
+
+footer > ul > li > p {
+    color: white;
+    padding-bottom: 10px;
+}
+
+.iconed {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+}
+
+.iconed > i {
+    line-height: 3.5;
+    color: white;
+}
