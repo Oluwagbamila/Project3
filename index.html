@@ -4,8 +4,9 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="project_3.css" />
+    <link rel="stylesheet" href="homepage.css" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Project 3</title>
 </head>
@@ -39,11 +40,17 @@
     <nav>
         <ul class="how">
             <li class="menu">
+                <span class="number">
+                    <p> 1 </p>
+                </span>
                 <i class="fa fa-mobile" aria-hidden="true"></i> 
                 <p> Choose a restaurant</p>
             </li>
 
             <li class="menu"> 
+                <span class="number">
+                    <p> 2 </p>
+                </span>
                 <div id="middle">
                     <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                     <i class="fas fa-bars"></i>
@@ -52,6 +59,9 @@
             </li>
 
             <li class="enjoy"> 
+                <span class="number">
+                    <p> 3 </p>
+                </span>
                 <i class="fas fa-store"></i>
                 <p> Go enjoy it at the restaurant</p>
             </li>
@@ -65,12 +75,14 @@
         <div class="Restaurants">
             <figure>
                 <img src="Images/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
+                <span> New </span>
                 <figcaption>
                     <div>
-                        <h3> The Full Palette </h3>
+                        <h3> <a href="fullpalette.html">The Full Palette </a> </h3>
                         <p> New York </p>
                     </div>
-                    <i class="icon-heart-empty"></i>
+                    <i class="fa fa-heart-o" id="heart" aria-hidden="true"></i>
+                    <i class="fas fa-heart" id="favorite"></i>
                 </figcaption>
             </figure>
         </div>
@@ -78,12 +90,14 @@
         <div class="Restaurants">
             <figure>
                 <img src="Images/stil-u2Lp8tXIcjw-unsplash.jpg">
+                <span> New </span>
                 <figcaption>
                     <div>
-                        <h3> The Enchanted Plate </h3>
+                        <h3> <a href="enchantedplate.html"> The Enchanted Plate </a></h3>
                         <p> New York </p>
                     </div>
-                    <i class="icon-heart-empty"></i>
+                    <i class="fas fa-heart" id="favorite"></i>
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
                 </figcaption>
             </figure>
         </div>
@@ -93,10 +107,10 @@
                 <img src="Images/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
                 <figcaption>
                     <div>
-                        <h3> Bastille </h3>
+                        <h3> <a href="Bastille.html"> Bastille </a></h3>
                         <p> New York </p>
                     </div>
-                    <i class="icon-heart-empty"></i>
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
                 </figcaption>
             </figure>
         </div>
@@ -106,19 +120,19 @@
                 <img src="Images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
                 <figcaption>
                     <div>
-                        <h3> Le Gourmand </h3>
+                        <h3> <a href="legourmand.html"> Le Gourmand </a></h3>
                         <p> New York </p>
                     </div>
-                    <i class="icon-heart-empty"></i>
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
                 </figcaption>
             </figure>
         </div>
     </section>
 
     <footer>
-        <fig>
-            <img src="Images/ohmyfood.png">
-        </fig>
+        <p id="ohmyfood">
+            ohmyfood
+        </p>
         <ul>
             <li class="iconed">
                 <i class="fas fa-utensils"></i>

@@ -3,6 +3,8 @@ body {
     color: black;
 }
 
+/* oh my food top section */
+
 .logo {
     background-color: white;
 }
@@ -54,7 +56,12 @@ body {
     height: auto;
     width: 20%;
     display: inline;
+}
 
+/* how it works middle section */
+
+.how > li:hover {
+    background-color: #9055d84d;
 }
 
 .how {
@@ -72,6 +79,7 @@ body {
     height: auto;
     width: 90%;
     margin-bottom: 2rem;
+    position: relative;
     background-color: #fff;
     font-weight: bold;
 }
@@ -79,6 +87,21 @@ body {
 .how > li > i {
     line-height: 3.5;
     color: darkgrey;
+}
+
+.number {
+    position: relative;
+    z-index: 0
+}
+
+.number > p {
+    color: white; 
+    background-color: #9356DC;
+    position: absolute;
+    z-index: 1;
+    right: -2px;
+    border-radius: 22px;
+    padding: 2px 8px;
 }
 
 #middle {
@@ -98,6 +121,8 @@ body {
     color: #9256dc;
 }
 
+/* pictures section */
+
 .Restaurants{
     background-color: #eee;
     display: flex;
@@ -113,22 +138,90 @@ body {
     width: 22rem;
     height: 18rem;
     padding: 5px;
+    position: relative;
   }
-  .Restaurants > figure > img{
+   
+.Restaurants > figure:hover {
+	border: solid 2px black;
+}
+
+.Restaurants > figure > img{
     width: 100%;
     height: 65%;
     border-radius: 12px 12px 0px 0px; 
     object-fit: cover;
   }
-  
-.Restaurants > figure:hover {
-	border: solid 2px black;
+
+.Restaurants > figure > span {
+    font-weight: bold;
+    color: darkgreen;
+    background-color: #99E2D0;
+    padding: 3px 10px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+
 }
 
-.Restaurants > figcaption {
+.Restaurants > figure > figcaption {
     padding-left: 5px;
-    display: flex;
     flex-flow: column wrap;
+    position: relative;
+}
+
+.Restaurants > figure > figcaption > div {
+    padding-left: 10px;
+}
+
+.Restaurants > figure > figcaption > i {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 25px;
+    color: black;
+}
+
+.Restaurants > figure > figcaption > i:nth-child(1) {
+    color: black;
+}
+
+#favorite {
+    background-image: linear-gradient(to bottom,white 50%, #FF79DA 50%);
+    background-size: 200% 200%;
+    transition: all 4s ease;
+}
+
+#heart {
+    background-color: white;
+}
+
+#heart:hover {
+    opacity: 0;
+}
+
+#favorite:hover{
+    background-position: 0 100%;
+}
+
+.Restaurants > figure > figcaption > div > h3 > a {
+    text-decoration: none;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: #9356DC;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #FF79DA;
+}
+
+a:active {
+    color: #99E2D0;
 }
 
 .Restaurants > h3{
@@ -137,20 +230,21 @@ body {
     font-weight:bold;
 }
 
+/*footer */
+
 footer {
     background-color: #000000d7;
     height: 20rem;
 }
 
-fig {
-    background-image: url("Images/ohmyfood.png");
-}
-
-footer > figure > img {
+#ohmyfood {
     color: white;
-    background-color: white;
-    filter: white;
-    height: 1.5rem;
+    font-family: Shirkhand;
+    font-weight: bold;
+    font-size: 3rem;
+    font-style: italic;
+    padding: 30px 0px 5px 30px;
+    margin-bottom: 0px;
 }
 
 footer > ul  {
