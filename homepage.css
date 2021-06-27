@@ -177,29 +177,33 @@ body {
     top: 5px;
     right: 10px;
     font-size: 25px;
-    color: black;
-}
-
-.Restaurants > figure > figcaption > i:nth-child(1) {
-    color: black;
-}
-
-#favorite {
-    background-image: linear-gradient(to bottom,white 50%, #FF79DA 50%);
-    background-size: 200% 200%;
-    transition: all 4s ease;
 }
 
 #heart {
-    background-color: white;
+    transition: all 4s ease;
+    -moz-transition: all 4s ease;
+    -webkit-transition: all 4s ease;
+    -o-transition: all 4s ease;
+    color: black;
 }
 
-#heart:hover {
+#heart:hover{
+    opacity: 0;
+}
+
+#favorite {
+    transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -webkit-transition: all 2s ease;
+    -o-transition: all 2s ease;
     opacity: 0;
 }
 
 #favorite:hover{
     background-position: 0 100%;
+    color: #FF79DA;
+    opacity: 1;
+    cursor: pointer;
 }
 
 .Restaurants > figure > figcaption > div > h3 > a {
@@ -255,6 +259,15 @@ footer > ul > li > p {
     padding-bottom: 10px;
 }
 
+footer a:link {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: white;
+}
+
 .iconed {
     display: flex;
     flex-flow: row wrap;
@@ -264,4 +277,155 @@ footer > ul > li > p {
 .iconed > i {
     line-height: 3.5;
     color: white;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .logo > img {
+        margin-left: 15%;
+    }
+
+    .Restaurants > figure {
+        width: 95%;
+        height: 60%;
+    }
+
+    .Restaurants > figure > span {
+        right: 35px;
+    }
+
+    .Restaurants > figure > img {
+        height: 20rem;
+        width: 100%;
+    }
+
+    .Restaurants > figure > figcaption > i {
+        right: 35px;
+    }
+
+    footer {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .logo > img {
+        margin-left: 21%;
+    }
+
+    .how {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 4rem;
+        justify-content: center;
+    }
+
+    .how > li {
+        width: 25%;
+        height: 5rem;
+        text-align: center;
+        position: relative;
+        top: 0;
+        transition: all 800ms ease;
+        -moz-transition: all 800ms ease;
+        -webkit-transition: all 800ms ease;
+        -o-transition: all 800ms ease;
+    }
+
+    .how > li:hover {
+        top:-3rem;
+    }
+
+    .how > li > p {
+        position: absolute;
+        top: 2.7rem;
+        padding-left: 3rem;
+        text-align: center;
+    }
+
+    #middle > i, .how > li > i {
+        line-height: 5;
+        position: absolute;
+        top: 2.3rem;
+        padding-left: 1.5rem;
+        color: #9356DC;
+    }
+
+    /* fix this part!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    .how > li > i:nth-child(1) {
+        font-size: 60rem;
+        color: red;
+    }
+
+    #middle > i {
+        padding-left: 0;
+    }
+
+    .number > p {
+        position: absolute;
+        right: -10rem;
+        top: -2rem;
+        margin-top: 0;
+        padding: 4px 10px;
+        border-radius: 50%;
+        font-size: 180%;
+    }
+
+    .content {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .content > h1 {
+        display: block;
+        width: 100%;
+    }
+
+    .Restaurants {
+        width: 50%;
+        background-color: white;
+    }
+
+    .Restaurants > figure {
+        width: 95%;
+    }
+
+    .Restaurants > figure > span {
+        right: 35px;
+    }
+
+    .Restaurants > figure > img {
+        width: 100%;
+        padding: 0;
+    }
+
+    .Restaurants > figure > figcaption {
+        background-color: #F2F2F2;
+        margin: 0;
+        height: 27%;
+    }
+
+    .Restaurants > figure > figcaption > i {
+        right: 35px;
+        font-size: 200%;
+    }
+
+    footer {
+        height: auto;
+        width: 100%;
+        display: flex;
+    }
+
+    footer > p {
+        margin-right: 4rem;
+    }
+
+    footer > ul {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    footer > ul > li {
+        width: 25rem;
+    }
 }
