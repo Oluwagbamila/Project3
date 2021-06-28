@@ -4,14 +4,194 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="Bastille.css" />
+    <link rel="stylesheet" href="Menu.css" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Project 3</title>
 </head>
-
 <body>
-    <div id="banner">73%</div>
+    <div class="loader"></div>
+
+<div class="body">
+
+    <header>
+        <a href="index.html">
+        <i class="fas fa-arrow-left"> </i>
+        <div class="logo">
+            <img src="Images/ohmyfood.png" alt="Ohmyfoods logo and link to homepage">
+        </div>
+        </a>
+    </header>   
+    <div class="food">
+        <figure>
+            <img src="Images/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
+        </figure>
+    </div>
+
+    <main>
+        <h2> The Enchanted Plate </h2>
+        <i class="fa fa-heart-o" id="heart" aria-hidden="true"></i>
+        <i class="fas fa-heart" id="favorite"></i>
+        <section>
+            <h2>
+                ENTREES
+            </h2>
+            <div>
+                <div class="span">
+                    <h3 class="h3p"> Foie Gras Ravioli</h3>
+                    <p class="h3p"> with truffle cream</p>
+                    <p id="price"> 25c</p>
+                    <span class="check"> 
+                        <i class="fas fa-check"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div>
+                <div class="span">
+                    <h3 class="h3p"> Oscietra Caviar</h3>
+                    <p class="h3p"> with buckwheat blinis</p>
+                    <p id="price"> 35c</p>
+                    <span class="check"> 
+                        <i class="fas fa-check"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div>
+                <div class="span">
+                    <h3> Lobster and Leek Foam</h3>
+                    <p> Marinated with orange zest</p>
+                    <p id="price"> 20c</p>
+                    <span class="check"> 
+                        <i class="fas fa-check"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div>
+                <div class="span">
+                    <h3> Duck Foie Gras</h3>
+                    <p> with fig jam and grilled baguette</p>
+                    <p id="price"> 35c</p>
+                    <span class="check"> 
+                        <i class="fas fa-check"></i>
+                    </span>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>
+                MAIN DISH
+            </h2>
+            <div>
+                <div class="span">
+                    <h3> Fresh Buttered Scallops</h3>
+                    <p> with white celery puree</p>
+                    <p id="price"> 40c</p>
+                    <span class="check"> 
+                        <i class="fas fa-check"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div>
+                <div class="span">
+                    <h3> Pan-Fried Lobster</h3>
+                    <p> with mashed sweet potatoes</p>
+                    <p id="price"> 35c</p>
+                    <span class="check"> 
+                        <i class="fas fa-check"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div>
+                <div class="span">
+                    <h3> Braised Ox Tail</h3>
+                    <p> with wild rice and lemon zest</p>
+                    <p id="price"> 44c</p>
+                    <span class="check"> 
+                        <i class="fas fa-check"></i>
+                    </span>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>
+                DESSERTS
+            </h2>
+            <div>
+                <div class="span">
+                    <h3> Chocolate and Hazelnut Macaroons </h3>
+                    <p> with caramel butter ice cream </p>
+                    <p id="price"> 18c</p>
+                    <span class="check"> 
+                        <i class="fas fa-check"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div>
+                <div class="span">
+                    <h3> Baba Au Rhum </h3>
+                    <p> with lemon drizzle</p>
+                    <p id="price"> 22c</p>
+                    <span class="check"> 
+                        <i class="fas fa-check"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div>
+                <div class="span">
+                    <h3> Lemon Meringue Pie</h3>
+                    <p> Destructured</p>
+                    <p id="price"> 22c</p>
+                    <span class="check"> 
+                        <i class="fas fa-check"></i>
+                    </span>
+                </div>
+            </div>
+
+        </section>
+
+        <p> Order </p>
+    </main>
+
+    <footer>
+        <p id="ohmyfood">
+            ohmyfood
+        </p>
+        <ul>
+            <li class="iconed">
+                <i class="fas fa-utensils"></i>
+                 <p> Suggest a restaurant</p>
+            </li>
+
+            <li class="iconed">
+                <i class="fas fa-handshake"></i>
+                <p> Become a partner </p>
+            </li>
+
+            <li>
+                <p> Legal</p>
+            </li>
+
+            <li>
+               <p> <a href="mailto:ohmyfoods@gmail.com"> Contact </a> </p>
+            </li>
+
+        </ul>
+
+    </footer>
+</div>
+
 </body>
+
 </html>

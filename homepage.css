@@ -88,6 +88,10 @@ body {
     color: darkgrey;
 }
 
+.how > li > i:nth-child(1) {
+    font-size: 20rem;
+}
+
 .number {
     position: relative;
     z-index: 0
@@ -303,8 +307,24 @@ footer a:visited {
     }
 
     footer {
-        height: auto;
-        width: 100%;
+        margin-top: 2px;
+        width: 103.5%;
+        display: flex;
+    }
+
+    
+    footer > p {
+        margin-right: 4rem;
+    }
+
+    footer > ul {
+        display: flex;
+        flex-flow: row wrap;
+        margin-left: 2rem;
+    }
+
+    footer > ul > li {
+        width: 25rem;
     }
 }
 
@@ -333,28 +353,23 @@ footer a:visited {
     }
 
     .how > li:hover {
-        top:-3rem;
+        transform: translate(0, -3rem);
+        -moz-transform: translate(0, -3rem);
+        -webkit-transform: translate(0, -3rem);
+        -o-transform: translate(0, -3rem);
     }
 
     .how > li > p {
-        position: absolute;
-        top: 2.7rem;
-        padding-left: 3rem;
-        text-align: center;
+        line-height: 3.5;
+        width: 100%;
     }
 
     #middle > i, .how > li > i {
         line-height: 5;
         position: absolute;
-        top: 2.3rem;
+        top: 2rem;
         padding-left: 1.5rem;
         color: #9356DC;
-    }
-
-    /* fix this part!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-    .how > li > i:nth-child(1) {
-        font-size: 60rem;
-        color: red;
     }
 
     #middle > i {
